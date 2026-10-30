@@ -8,11 +8,12 @@
 </style>
 </head>
 <body>
-<nav><a href="#articulate">Articulate Projects</a><a href="#technology">Technology Use Cases</a><a href="https://github.com/millspec" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+<nav><a href="#articulate">Articulate Projects</a><a href="#technology">Technology Use Cases</a><a href="#documents">Learning Documents</a><a href="https://github.com/millspec" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
 <header><div class="eyebrow">Learning Experience Design · eLearning · Technology</div><h1>Instructional Design Portfolio</h1><p>Selected interactive learning experiences and practical technology applications, with a focus on clear learning objectives, thoughtful user experiences, and real-world performance.</p><a class="btn" href="#articulate">Explore projects</a></header>
 <main>
 <section id="articulate" class="wrap"><h2>Articulate Projects</h2><p class="lead">Interactive courses built with Articulate Storyline and Rise.</p><div class="grid" id="articulate-list"></div></section>
 <section id="technology" class="wrap" style="padding-top:0"><h2>Technology Use Cases</h2><p class="lead">Examples of learning technology in action, including tools, workflows, and digital experiences.</p><div class="grid" id="technology-list"></div></section>
+<section id="documents" class="wrap" style="padding-top:0"><h2>Learning Documents</h2><p class="lead">Facilitation guides, leader resources, and performance-support tools.</p><div class="grid" id="documents-list"></div></section>
 </main>
 <footer>Instructional Design Portfolio · <a href="https://github.com/millspec">View GitHub profile</a></footer>
 <script>
@@ -21,10 +22,19 @@
 // Keep url as an empty string for an unlaunched project; it will show "Coming soon" instead of a button.
 const articulateProjects = [
   {title:"OB Patients in the ED",tag:"Articulate Storyline",description:"Interactive learning module on obstetric patients in the emergency department.",url:"./ED_OB_AH_Web/story.html",thumbnail:"./thumbnails/ob-patients-ed.png",icon:"✚"}
+  ,{title:"Leading the Cascade",tag:"Articulate Project",description:"Leadership learning experience. Course launch link to be added.",url:"",thumbnail:"./thumbnails/leading-the-cascade.png",icon:"▶"}
   // Example: ,{title:"Another Storyline Course",tag:"Articulate Storyline",description:"A short overview.",url:"./new-course/story.html",thumbnail:"./thumbnails/new-course.png",icon:"▶"}
 ];
 const technologyUseCases = [
+  {title:"Alex Video",tag:"Powtoon · Video Production",description:"Animated learning video developed using Powtoon to illustrate a technology-enabled learning use case.",url:"",thumbnail:"./thumbnails/alex-video.png",icon:"▶"},
+  {title:"Aviation Safety Video",tag:"HeyGen · Synthesia · AI Video Production",description:"Aviation safety learning video using AI-assisted video production tools including HeyGen and Synthesia.",url:"",thumbnail:"./thumbnails/aviation-safety.png",icon:"▶"},
+  {title:"Ferry Flight Video",tag:"HeyGen · Synthesia · AI Video Production",description:"Ferry flight training video developed using HeyGen and Synthesia as part of a technology-enabled learning experience.",url:"",thumbnail:"./thumbnails/ferry-flight.png",icon:"▶"}
   // Example: {title:"Technology Workflow",tag:"Learning Technology",description:"How a technology solution supports learning.",url:"https://example.com",thumbnail:"./thumbnails/technology-workflow.png",icon:"⚙"}
+];
+const learningDocuments = [
+  {title:"Leadership Course Facilitator Guides",tag:"Facilitation Resources",description:"Five facilitator guides, including Energy Check, Leadership in the Gray, Leading Beyond Your Title, Small Moments Big Trust, and The Infinite Leader.",url:"https://github.com/millspec/Instructional-Design/tree/9bca174a358eac21e174cfbc67f1afcb3c7b0830/Leadership%20Course%20Facilitator%20Guides",thumbnail:"./thumbnails/leadership-guides.png",icon:"▤"},
+  {title:"Strategic Imperatives Learning Documents",tag:"Leader Tools",description:"Facilitator guides, conversation guides, overviews, FAQ and team action-planning resources.",url:"https://github.com/millspec/Instructional-Design/tree/9bca174a358eac21e174cfbc67f1afcb3c7b0830/Strategic%20Imperatives%20Learning%20Documents",thumbnail:"./thumbnails/strategic-imperatives.png",icon:"▤"},
+  {title:"1-1 Reference Card",tag:"Quick Reference Guide",description:"A performance-support reference card for structured one-on-one conversations.",url:"https://github.com/millspec/Instructional-Design/blob/f44d407008dbf6f18ec73d98093f1d43963a130c/QRG_Strategic1-1_NF_V4.pdf",thumbnail:"./thumbnails/one-on-one-card.png",icon:"▤"}
 ];
 function renderProjects(elementId, projects){
  const container=document.getElementById(elementId);
@@ -37,13 +47,14 @@ function renderProjects(elementId, projects){
  const h=document.createElement('h3');h.textContent=item.title;
  const p=document.createElement('p');p.textContent=item.description;
  body.append(tag,h,p);
- if(item.url){const a=document.createElement('a');a.className='btn';a.href=item.url;a.textContent='Launch Project';a.target='_blank';a.rel='noopener noreferrer';body.appendChild(a)}
- else{const status=document.createElement('span');status.className='tag';status.textContent='Coming soon';body.appendChild(status)}
+ if(item.url){const a=document.createElement('a');a.className='btn';a.href=item.url;a.textContent=elementId==='documents-list'?'View Documents':'Launch Project';a.target='_blank';a.rel='noopener noreferrer';body.appendChild(a)}
+ else{const status=document.createElement('span');status.className='tag';status.textContent='Link coming soon';body.appendChild(status)}
  card.append(visual,body);container.appendChild(card);
  });
 }
 renderProjects('articulate-list',articulateProjects);
 renderProjects('technology-list',technologyUseCases);
+renderProjects('documents-list',learningDocuments);
 </script>
 </body>
 </html>
