@@ -1,113 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Instructional design portfolio featuring interactive eLearning and learning experience design.">
-  <title>Instructional Design Portfolio</title>
-  <style>
-    :root { --navy:#152b41; --blue:#146d83; --cream:#f6f9fb; --ink:#182837; --muted:#526675; --accent:#e57437; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:Segoe UI,Arial,sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
-    a { color:inherit; }
-    .shell { max-width:1120px; margin:auto; padding:0 25px; }
-    header { background:#fff; border-bottom:1px solid #e5eaf0; }
-    header .shell { min-height:76px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
-    .brand { font-weight:750; font-size:1.08rem; text-decoration:none; color:var(--navy); }
-    nav { display:flex; gap:22px; }
-    nav a { text-decoration:none; color:var(--muted); font-weight:600; }
-    nav a:hover { color:var(--blue); }
-    .hero { background:linear-gradient(120deg,#142b43 0%,#1b5264 100%); color:#fff; padding:84px 0 90px; }
-    .eyebrow { letter-spacing:.13em; text-transform:uppercase; font-size:.79rem; font-weight:800; color:#9de3e6; }
-    h1 { font-size:clamp(2.15rem,5vw,3.8rem); line-height:1.13; max-width:860px; margin:16px 0 23px; }
-    .hero p { font-size:1.14rem; color:#dbe9ef; max-width:770px; margin:0 0 29px; }
-    .button { display:inline-block; padding:12px 23px; background:var(--accent); border-radius:8px; text-decoration:none; font-weight:750; color:#fff; }
-    .button:hover { background:#c95726; }
-    .button.secondary { background:#fff; border:1px solid #bed5df; color:var(--navy); }
-    section { padding:65px 0; }
-    section.alt { background:var(--cream); }
-    h2 { font-size:2rem; margin:0 0 12px; color:var(--navy); }
-    .intro { max-width:790px; margin:0 0 30px; color:var(--muted); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
-    .card { background:#fff; border:1px solid #e4eaf0; border-radius:14px; overflow:hidden; box-shadow:0 7px 24px rgba(24,40,55,.055); }
-    .art { min-height:165px; display:flex; align-items:center; justify-content:center; padding:26px; text-align:center; color:#fff; background:linear-gradient(135deg,#1e6177,#163047); font-size:1.55rem; font-weight:800; }
-    .art.orange { background:linear-gradient(135deg,#d56c3d,#962f30); }
-    .art.gray { background:linear-gradient(135deg,#708090,#30495c); }
-    .body { padding:24px; }
-    .tag { color:#23758b; font-size:.74rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; }
-    h3 { color:var(--navy); margin:10px 0; font-size:1.35rem; }
-    .body p { color:var(--muted); margin:0 0 20px; }
-    .body .button { font-size:.92rem; }
-    .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
-    .fact { border-left:4px solid var(--accent); background:#fff; padding:15px 18px; }
-    .fact strong { display:block; color:var(--navy); }
-    .fact span { font-size:.91rem; color:var(--muted); }
-    footer { background:var(--navy); color:#d8e4ec; padding:25px 0; font-size:.9rem; }
-    @media(max-width:550px) { header .shell { align-items:flex-start; flex-direction:column; padding-top:18px; padding-bottom:18px; } .hero { padding:60px 0; } nav { gap:14px; } }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instructional Design Portfolio</title>
+<style>
+:root{--navy:#15273d;--blue:#167bba;--bg:#f5f8fb;--muted:#53657a;--line:#dce5ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--navy)}header{background:linear-gradient(120deg,#172d49,#245d88);color:white;padding:72px max(24px,calc((100vw - 1100px)/2)) 64px}header h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.13;margin:12px 0}header p{max-width:700px;color:#e0eaf4}nav{background:#10243b;padding:13px 24px;text-align:center}nav a{color:white;text-decoration:none;margin:0 16px;font-weight:600}nav a:hover{text-decoration:underline}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.82rem;font-weight:700;color:#b9e5ff}.wrap{max-width:1100px;margin:auto;padding:54px 24px}h2{font-size:1.9rem;margin:0 0 8px}.lead{color:var(--muted);margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 6px 22px #15273d0a}.visual{height:145px;background:linear-gradient(135deg,#d2ecf7,#9cc9e1);display:flex;align-items:center;justify-content:center;font-size:3rem}.visual img{width:100%;height:100%;object-fit:cover;display:block}.card-body{padding:24px}.tag{font-size:.78rem;color:#12699d;font-weight:750;text-transform:uppercase;letter-spacing:.05em}.card h3{margin:6px 0;font-size:1.33rem}.card p{color:var(--muted);margin:8px 0 22px}.btn{display:inline-block;background:var(--blue);color:white;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:8px}.btn:hover{background:#075989}.empty{padding:24px;border:2px dashed #bbcede;border-radius:14px;color:var(--muted);background:white}.instructions{margin-top:35px;padding:22px;background:#e9f3f9;border-radius:12px}.instructions code{overflow-wrap:anywhere}footer{background:#10243b;color:#dbe8f3;text-align:center;padding:30px 20px}footer a{color:white}@media(max-width:600px){nav a{display:inline-block;margin:5px 8px}header{padding:55px 24px}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="shell">
-      <a class="brand" href="#home">Instructional Design Portfolio</a>
-      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#approach">My Approach</a><a href="#contact">Contact</a></nav>
-    </div>
-  </header>
-  <main id="home">
-    <div class="hero">
-      <div class="shell">
-        <div class="eyebrow">Instructional Design · eLearning · Learning Experience Design</div>
-        <h1>Designing learning experiences that make complex ideas actionable.</h1>
-        <p>Explore interactive eLearning projects and the instructional design decisions behind them—from learning objectives and UX to multimedia and assessment.</p>
-        <a class="button" href="#projects">Explore Projects</a>
-      </div>
-    </div>
-    <section class="alt" id="projects">
-      <div class="shell">
-        <h2>Featured Projects</h2>
-        <p class="intro">Explore Articulate projects and technology use cases. Additional examples can be added as the portfolio grows.</p>
-        <div class="grid">
-          <article class="card">
-            <div class="art">Articulate Projects</div>
-            <div class="body">
-              <div class="tag">Featured · Articulate Storyline</div>
-              <h3>Healthcare Learning Module</h3>
-              <p>An interactive, web-based learning experience developed in Articulate Storyline. Explore the course to see its presentation, multimedia, and learner interactions.</p>
-              <a class="button" href="./ED_OB_AH_Web/story.html" target="_blank" rel="noopener noreferrer">Launch Course ↗</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="art gray">Technology Use Cases</div>
-            <div class="body">
-              <div class="tag">Coming Soon · Learning Technology</div>
-              <h3>Learning Technology Applications</h3>
-              <p>Explore practical examples of how learning technologies support engaging instruction, efficient workflows, and learner performance.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="approach">
-      <div class="shell">
-        <h2>My Design Approach</h2>
-        <p class="intro">I design with the learner experience and the performance goal in mind. These are the areas I consider when moving from content to an engaging learning solution.</p>
-        <div class="facts">
-          <div class="fact"><strong>Analysis & Alignment</strong><span>Business needs, audience, measurable objectives</span></div>
-          <div class="fact"><strong>Experience Design</strong><span>Clear navigation, accessibility, practice opportunities</span></div>
-          <div class="fact"><strong>Development</strong><span>Storyline, multimedia, interactions, assessments</span></div>
-          <div class="fact"><strong>Evaluation</strong><span>Feedback, usability, knowledge checks, performance</span></div>
-        </div>
-      </div>
-    </section>
-    <section class="alt" id="contact">
-      <div class="shell">
-        <h2>Connect</h2>
-        <p class="intro">To learn more about my work, reach out through my GitHub profile.</p>
-        <a class="button secondary" href="https://github.com/millspec" target="_blank" rel="noopener noreferrer">View GitHub Profile ↗</a>
-      </div>
-    </section>
-  </main>
-  <footer><div class="shell">Instructional Design Portfolio · Hosted with GitHub Pages</div></footer>
+<nav><a href="#articulate">Articulate Projects</a><a href="#technology">Technology Use Cases</a><a href="https://github.com/millspec" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+<header><div class="eyebrow">Learning Experience Design · eLearning · Technology</div><h1>Instructional Design Portfolio</h1><p>Selected interactive learning experiences and practical technology applications, with a focus on clear learning objectives, thoughtful user experiences, and real-world performance.</p><a class="btn" href="#articulate">Explore projects</a></header>
+<main>
+<section id="articulate" class="wrap"><h2>Articulate Projects</h2><p class="lead">Interactive courses built with Articulate Storyline and Rise.</p><div class="grid" id="articulate-list"></div></section>
+<section id="technology" class="wrap" style="padding-top:0"><h2>Technology Use Cases</h2><p class="lead">Examples of learning technology in action, including tools, workflows, and digital experiences.</p><div class="grid" id="technology-list"></div></section>
+</main>
+<footer>Instructional Design Portfolio · <a href="https://github.com/millspec">View GitHub profile</a></footer>
+<script>
+// ADD NEW COURSES HERE: duplicate an object, change its title, tag, description, url, thumbnail, and icon.
+// Put image files in the thumbnails folder. Recommended dimensions: 1200 x 675 pixels (16:9).
+// Keep url as an empty string for an unlaunched project; it will show "Coming soon" instead of a button.
+const articulateProjects = [
+  {title:"OB Patients in the ED",tag:"Articulate Storyline",description:"Interactive learning module on obstetric patients in the emergency department.",url:"./ED_OB_AH_Web/story.html",thumbnail:"./thumbnails/ob-patients-ed.png",icon:"✚"}
+  // Example: ,{title:"Another Storyline Course",tag:"Articulate Storyline",description:"A short overview.",url:"./new-course/story.html",thumbnail:"./thumbnails/new-course.png",icon:"▶"}
+];
+const technologyUseCases = [
+  // Example: {title:"Technology Workflow",tag:"Learning Technology",description:"How a technology solution supports learning.",url:"https://example.com",thumbnail:"./thumbnails/technology-workflow.png",icon:"⚙"}
+];
+function renderProjects(elementId, projects){
+ const container=document.getElementById(elementId);
+ if(!projects.length){const p=document.createElement('div');p.className='empty';p.textContent='Projects will be added here.';container.appendChild(p);return;}
+ projects.forEach(item=>{
+ const card=document.createElement('article');card.className='card';
+ const visual=document.createElement('div');visual.className='visual';visual.textContent=item.icon||'▶';if(item.thumbnail){const img=document.createElement('img');img.src=item.thumbnail;img.alt=item.title+' course thumbnail';img.loading='lazy';img.onerror=()=>{img.remove();visual.textContent=item.icon||'▶'};visual.textContent='';visual.appendChild(img)}
+ const body=document.createElement('div');body.className='card-body';
+ const tag=document.createElement('div');tag.className='tag';tag.textContent=item.tag||'Project';
+ const h=document.createElement('h3');h.textContent=item.title;
+ const p=document.createElement('p');p.textContent=item.description;
+ body.append(tag,h,p);
+ if(item.url){const a=document.createElement('a');a.className='btn';a.href=item.url;a.textContent='Launch Project';a.target='_blank';a.rel='noopener noreferrer';body.appendChild(a)}
+ else{const status=document.createElement('span');status.className='tag';status.textContent='Coming soon';body.appendChild(status)}
+ card.append(visual,body);container.appendChild(card);
+ });
+}
+renderProjects('articulate-list',articulateProjects);
+renderProjects('technology-list',technologyUseCases);
+</script>
 </body>
 </html>
