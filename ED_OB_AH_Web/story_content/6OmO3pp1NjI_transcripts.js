@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":280,"text":"I've been feeling kind of dizzy today,"},{"start":2240,"text":"especially when I get up or move around."},{"start":4480,"text":"I've also noticed that I'm getting short of breath sometimes,"},{"start":7119,"text":"even when I'm not doing very much,"},{"start":9000,"text":"and I've been having this tight feeling in my stomach every once in a while."},{"start":12439,"text":"It doesn't really hurt,"},{"start":13840,"text":"but it's been happening more often today."},{"start":15920,"text":"I wasn't sure if this was just part of being pregnant"},{"start":18319,"text":"or if it was something I should be worried about,"},{"start":20719,"text":"so"},{"start":21370,"text":"I thought it would be better to come in and get checked out."}]}]};
+    window.globalLoadJsAsset('story_content/6OmO3pp1NjI_transcripts.js', JSON.stringify(data));
+})();

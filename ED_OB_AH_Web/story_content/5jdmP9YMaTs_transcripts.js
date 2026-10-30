@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":259,"text":"Let's reconsider that decision."},{"start":2180,"text":"Pregnancy causes significant changes throughout the body,"},{"start":5429,"text":"particularly during the 3rd trimester."},{"start":7550,"text":"Understanding those changes helps us interpret what we're seeing,"},{"start":10949,"text":"but it doesn't mean we should dismiss a patient's symptoms as normal."},{"start":14390,"text":"Sarah's dizziness,"},{"start":15630,"text":"shortness of breath,"},{"start":16750,"text":"and abdominal tightness still require appropriate assessment."},{"start":20379,"text":"Think about how you can use your knowledge of"},{"start":22250,"text":"pregnancy-related changes without making assumptions about her condition."},{"start":26389,"text":"Let's look at it again."}]}]};
+    window.globalLoadJsAsset('story_content/5jdmP9YMaTs_transcripts.js', JSON.stringify(data));
+})();

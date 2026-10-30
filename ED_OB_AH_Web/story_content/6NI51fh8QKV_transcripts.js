@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":200,"text":"You're on the right track,"},{"start":1559,"text":"but your assessment is incomplete."},{"start":3599,"text":"Sarah is reporting dizziness,"},{"start":5320,"text":"shortness of breath,"},{"start":6320,"text":"and abdominal tightness."},{"start":8279,"text":"While those symptoms are important,"},{"start":9880,"text":"we also need to consider her pregnancy."},{"start":12079,"text":"Think about what additional information could help you understand her condition."},{"start":16120,"text":"Have you considered her pregnancy history,"},{"start":18239,"text":"maternal vital signs,"},{"start":19879,"text":"prenatal care,"},{"start":21040,"text":"and relevant obstetric findings?"},{"start":23159,"text":"Take another look at the options and choose the most complete assessment approach."}]}]};
+    window.globalLoadJsAsset('story_content/6NI51fh8QKV_transcripts.js', JSON.stringify(data));
+})();

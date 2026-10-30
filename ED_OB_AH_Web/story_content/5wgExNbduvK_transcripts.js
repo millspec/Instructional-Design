@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":310,"text":"There's an important piece missing from your approach."},{"start":2940,"text":"Documentation should reflect the information you've actually"},{"start":5670,"text":"collected and the findings you've observed."},{"start":8069,"text":"Recording only Sarah's chief complaint would"},{"start":10390,"text":"leave out important assessment information,"},{"start":12789,"text":"and we should never document findings that haven't been assessed or verified."},{"start":16909,"text":"Consider what the next member of the clinical"},{"start":18790,"text":"team would need to know about Sarah's condition."},{"start":21309,"text":"Review your options and select the approach that supports complete,"},{"start":24899,"text":"accurate documentation"},{"start":26510,"text":"and appropriate communication."}]}]};
+    window.globalLoadJsAsset('story_content/5wgExNbduvK_transcripts.js', JSON.stringify(data));
+})();

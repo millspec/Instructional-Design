@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":180,"text":"Welcome to the emergency department."},{"start":2380,"text":"Every pregnant patient presents unique assessment considerations."},{"start":6000,"text":"Understanding the physiological changes of"},{"start":8060,"text":"pregnancy helps us recognize important"},{"start":10300,"text":"findings and document the information needed to support patient care."},{"start":14140,"text":"In this experience,"},{"start":15420,"text":"you'll review pregnancy terminology,"},{"start":17620,"text":"explore changes across the 3 trimesters,"},{"start":20340,"text":"and apply what you've learned to a simulated emergency department encounter."},{"start":24180,"text":"You'll make clinical assessment decisions and"},{"start":26299,"text":"receive feedback based on your choices."},{"start":28540,"text":"Let's get started."}]}]};
+    window.globalLoadJsAsset('story_content/5ttx5SIWdu6_transcripts.js', JSON.stringify(data));
+})();

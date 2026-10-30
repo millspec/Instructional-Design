@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":259,"text":"Excellent."},{"start":1100,"text":"You're taking the right approach."},{"start":2970,"text":"When assessing a pregnant patient in the emergency department,"},{"start":5849,"text":"we need to look beyond the immediate complaint."},{"start":8409,"text":"You identified the importance of gathering Sarah's presenting symptoms,"},{"start":11970,"text":"pregnancy history,"},{"start":13250,"text":"maternal vital signs,"},{"start":14689,"text":"and relevant obstetric findings."},{"start":16809,"text":"Remember,"},{"start":17649,"text":"our assessment should also consider her prenatal care,"},{"start":20799,"text":"previous pregnancies,"},{"start":22170,"text":"and any potential risk factors."},{"start":24370,"text":"A comprehensive assessment helps us recognize concerns"},{"start":27450,"text":"and communicate important findings to the clinical team."},{"start":30620,"text":"Let's move on to interpreting Sarah's symptoms."}]}]};
+    window.globalLoadJsAsset('story_content/5XyOBsP1lcR_transcripts.js', JSON.stringify(data));
+})();

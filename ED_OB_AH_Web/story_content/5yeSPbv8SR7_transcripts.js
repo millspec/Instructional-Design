@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":310,"text":"Very good."},{"start":1389,"text":"During the 3rd trimester,"},{"start":2869,"text":"a pregnant patient's body experiences"},{"start":5190,"text":"significant cardiovascular and respiratory changes."},{"start":8300,"text":"Maternal blood volume increases,"},{"start":10350,"text":"cardiac output rises,"},{"start":11989,"text":"and the enlarging uterus changes the position of the diaphragm."},{"start":15550,"text":"These changes may help explain some of the symptoms a patient experiences."},{"start":19629,"text":"However,"},{"start":20379,"text":"we should never automatically assume that dizziness or shortness"},{"start":23540,"text":"of breath is simply a normal part of pregnancy."},{"start":26489,"text":"You've recognized the importance of"},{"start":27969,"text":"using your knowledge of physiological changes"},{"start":30409,"text":"while continuing an appropriate clinical assessment."},{"start":33490,"text":"Let's move on to documentation and communication."}]}]};
+    window.globalLoadJsAsset('story_content/5yeSPbv8SR7_transcripts.js', JSON.stringify(data));
+})();
