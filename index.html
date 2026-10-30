@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instructional design portfolio featuring interactive eLearning and learning experience design.">
+  <title>Instructional Design Portfolio</title>
+  <style>
+    :root { --navy:#152b41; --blue:#146d83; --cream:#f6f9fb; --ink:#182837; --muted:#526675; --accent:#e57437; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Segoe UI,Arial,sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
+    a { color:inherit; }
+    .shell { max-width:1120px; margin:auto; padding:0 25px; }
+    header { background:#fff; border-bottom:1px solid #e5eaf0; }
+    header .shell { min-height:76px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:750; font-size:1.08rem; text-decoration:none; color:var(--navy); }
+    nav { display:flex; gap:22px; }
+    nav a { text-decoration:none; color:var(--muted); font-weight:600; }
+    nav a:hover { color:var(--blue); }
+    .hero { background:linear-gradient(120deg,#142b43 0%,#1b5264 100%); color:#fff; padding:84px 0 90px; }
+    .eyebrow { letter-spacing:.13em; text-transform:uppercase; font-size:.79rem; font-weight:800; color:#9de3e6; }
+    h1 { font-size:clamp(2.15rem,5vw,3.8rem); line-height:1.13; max-width:860px; margin:16px 0 23px; }
+    .hero p { font-size:1.14rem; color:#dbe9ef; max-width:770px; margin:0 0 29px; }
+    .button { display:inline-block; padding:12px 23px; background:var(--accent); border-radius:8px; text-decoration:none; font-weight:750; color:#fff; }
+    .button:hover { background:#c95726; }
+    .button.secondary { background:#fff; border:1px solid #bed5df; color:var(--navy); }
+    section { padding:65px 0; }
+    section.alt { background:var(--cream); }
+    h2 { font-size:2rem; margin:0 0 12px; color:var(--navy); }
+    .intro { max-width:790px; margin:0 0 30px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
+    .card { background:#fff; border:1px solid #e4eaf0; border-radius:14px; overflow:hidden; box-shadow:0 7px 24px rgba(24,40,55,.055); }
+    .art { min-height:165px; display:flex; align-items:center; justify-content:center; padding:26px; text-align:center; color:#fff; background:linear-gradient(135deg,#1e6177,#163047); font-size:1.55rem; font-weight:800; }
+    .art.orange { background:linear-gradient(135deg,#d56c3d,#962f30); }
+    .art.gray { background:linear-gradient(135deg,#708090,#30495c); }
+    .body { padding:24px; }
+    .tag { color:#23758b; font-size:.74rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; }
+    h3 { color:var(--navy); margin:10px 0; font-size:1.35rem; }
+    .body p { color:var(--muted); margin:0 0 20px; }
+    .body .button { font-size:.92rem; }
+    .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+    .fact { border-left:4px solid var(--accent); background:#fff; padding:15px 18px; }
+    .fact strong { display:block; color:var(--navy); }
+    .fact span { font-size:.91rem; color:var(--muted); }
+    footer { background:var(--navy); color:#d8e4ec; padding:25px 0; font-size:.9rem; }
+    @media(max-width:550px) { header .shell { align-items:flex-start; flex-direction:column; padding-top:18px; padding-bottom:18px; } .hero { padding:60px 0; } nav { gap:14px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <a class="brand" href="#home">Instructional Design Portfolio</a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#approach">My Approach</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="home">
+    <div class="hero">
+      <div class="shell">
+        <div class="eyebrow">Instructional Design · eLearning · Learning Experience Design</div>
+        <h1>Designing learning experiences that make complex ideas actionable.</h1>
+        <p>Explore interactive eLearning projects and the instructional design decisions behind them—from learning objectives and UX to multimedia and assessment.</p>
+        <a class="button" href="#projects">Explore Projects</a>
+      </div>
+    </div>
+    <section class="alt" id="projects">
+      <div class="shell">
+        <h2>Featured Projects</h2>
+        <p class="intro">Explore Articulate projects and technology use cases. Additional examples can be added as the portfolio grows.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="art">Articulate Projects</div>
+            <div class="body">
+              <div class="tag">Featured · Articulate Storyline</div>
+              <h3>Healthcare Learning Module</h3>
+              <p>An interactive, web-based learning experience developed in Articulate Storyline. Explore the course to see its presentation, multimedia, and learner interactions.</p>
+              <a class="button" href="./ED_OB_AH_Web/story.html" target="_blank" rel="noopener noreferrer">Launch Course ↗</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="art gray">Technology Use Cases</div>
+            <div class="body">
+              <div class="tag">Coming Soon · Learning Technology</div>
+              <h3>Learning Technology Applications</h3>
+              <p>Explore practical examples of how learning technologies support engaging instruction, efficient workflows, and learner performance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="approach">
+      <div class="shell">
+        <h2>My Design Approach</h2>
+        <p class="intro">I design with the learner experience and the performance goal in mind. These are the areas I consider when moving from content to an engaging learning solution.</p>
+        <div class="facts">
+          <div class="fact"><strong>Analysis & Alignment</strong><span>Business needs, audience, measurable objectives</span></div>
+          <div class="fact"><strong>Experience Design</strong><span>Clear navigation, accessibility, practice opportunities</span></div>
+          <div class="fact"><strong>Development</strong><span>Storyline, multimedia, interactions, assessments</span></div>
+          <div class="fact"><strong>Evaluation</strong><span>Feedback, usability, knowledge checks, performance</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="alt" id="contact">
+      <div class="shell">
+        <h2>Connect</h2>
+        <p class="intro">To learn more about my work, reach out through my GitHub profile.</p>
+        <a class="button secondary" href="https://github.com/millspec" target="_blank" rel="noopener noreferrer">View GitHub Profile ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell">Instructional Design Portfolio · Hosted with GitHub Pages</div></footer>
+</body>
+</html>
